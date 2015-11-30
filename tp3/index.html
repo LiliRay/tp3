@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="BddClient">
+
+<head>
+    <title>tp3</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+
+<body ng-controller="CtrlPrincipal">
+    <div>
+        <div id="affichage">
+            <p>Login: {{utilisateur.login}}</p>
+            <p>Url {{utilisateur.url}}</p>
+            <p>name {{utilisateur.name}}</p>
+            <p>location {{utilisateur.location}}</p>
+        </div>
+        <br/>
+        <br/>
+        <form ng-submit="chercher()">
+            nom d'utilisateur:
+            <input text="text" name="username" ng-model="username">
+            <br/>
+            <input type="submit" value="Rechercher">
+        </form>
+    </div>
+    <script src="JS/angular.min.js"></script>
+    <script src="JS/angular-route.min.js"></script>
+    <script src="JS/app/appModule.js"></script>
+    <script src="JS/app/appController.js"></script>
+</body>
+
+</html>
